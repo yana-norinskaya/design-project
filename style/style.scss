@@ -26,8 +26,9 @@ a {
     line-height: 56px;
     color: #000000;
     margin-left: 35px;
-    margin-top: 90px;
     position: relative;
+    padding-top: 70px;
+    z-index: 5;
 }
 
 .title::before {
@@ -36,8 +37,9 @@ a {
     width: 200px;
     height: 10px;
     background: #000000;
-    top: 65px;
+    bottom: -40px;
     left: -35px;
+    z-index: 5;
 }
 
 //Header
@@ -142,7 +144,6 @@ a {
 .descptn {
     display: flex;
     justify-content: space-between;
-
     margin: 25px 20px;
     padding: 50px;
     background: #F2F2F2;
@@ -187,10 +188,12 @@ a {
 }
 
 //Price
+
 .price {
     display: flex;
     justify-content: center;
-    padding: 70px;
+    padding-top: 70px;
+    border-bottom: 1px solid #E0E0E0;
 
     &_calc {
         padding-right: 135px;
@@ -260,7 +263,7 @@ a {
         content: "";
         width: 762px;
         height: 1px;
-        bottom: 127px;
+        bottom: 150px;
         left: -77px;
         background: #E0E0E0;
     }
@@ -274,6 +277,7 @@ a {
         padding-left: 85px;
         margin-top: 5px;
         margin-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     &_bonus div:before {
@@ -284,5 +288,157 @@ a {
         background: #0E0E0E;
         top: 20px;
         left: 55px;
+    }
+}
+
+//section3
+
+.service {
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 100px;
+        width: 1748px;
+        margin: 0 auto;
+        transform: translateY(-226px);
+
+        &-item {
+            border: 1px solid #E0E0E0;
+            border-bottom: none;
+            padding-top: 200px;
+        }
+
+        &-item h3 {
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 56px;
+            margin-top: 74px;
+            color: #0E0E0E;
+            position: relative;
+            padding: 5px;
+
+        }
+
+        &-item p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 147.19%;
+            color: #4F4F4F;
+            margin-top: 20px;
+            padding: 5px;
+            padding-bottom: 50px;
+        }
+    }
+}
+
+//projects
+
+.project::before {
+    content: "";
+    position: absolute;
+    width: 1174px;
+    height: 95%;
+    background: #F5F5F5;
+    top: 5%;
+    right: 0;
+    z-index: 0;
+}
+
+.line1 {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 670px;
+    background: #E0E0E0;
+}
+
+.line2 {
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    top: 0;
+    left: 1248px;
+    background: #E0E0E0;
+}
+
+.project {
+    border-top: 1px solid #E0E0E0;
+    margin-top: -226px;
+    padding-bottom: 50px;
+    position: relative;
+    border-bottom: 1px solid #E0E0E0;
+
+    &__more {
+        width: 273px;
+        background: #000000;
+        border: 1px solid #000000;
+        color: #F2F2F2;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        padding: 19px 0 22px 0;
+        cursor: pointer;
+        margin: 0 auto;
+        position: relative;
+        z-index: 20;
+        transition: all 1s ease;
+    }
+
+    &__more:hover {
+        background: #535353;
+        border: 1px solid #000000;
+    }
+
+    &__more img {
+        transform: translate(-10px, 4px);
+    }
+
+    &__list::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        top: 715px;
+        left: 0;
+        background: #E0E0E0;
+    }
+
+    &__list {
+        padding-top: 59px;
+        display: grid;
+        grid-template-columns: repeat(3, 576px);
+        justify-content: center;
+        position: relative;
+
+        &-item {
+            padding-bottom: 40px;
+            cursor: pointer;
+        }
+
+        &-item p:nth-of-type(1) {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 33px;
+            color: #000000;
+            padding: 6px 0;
+        }
+
+        &-item p:nth-of-type(2) {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 28px;
+            color: #4F4F4F;
+            padding: 6px 0;
+        }
+
+        &-item span {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #333333;
+            padding: 6px 0;
+        }
     }
 }
