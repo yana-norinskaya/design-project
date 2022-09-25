@@ -684,3 +684,210 @@ a {
         gap: 17px;
     }
 }
+
+// katalog
+.katalog {
+    padding-bottom: 45px;
+
+    &_wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 37px;
+        margin-top: 60px;
+
+        &-btn {
+            width: 100%;
+            padding: 27px;
+            font-weight: 300;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            color: #F2F2F2;
+            background: #000000;
+            border: 1px solid #000000;
+            margin-top: 75px;
+            cursor: pointer;
+            transition: all 1s ease;
+        }
+
+        &-btn:hover {
+            background: #535353;
+            border: 1px solid #535353;
+        }
+
+        &-get {
+            padding-left: 130px;
+            padding-right: 100px;
+        }
+
+        &-get p:nth-of-type(1) {
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 146.69%;
+            color: #000000;
+            margin-top: -20px;
+        }
+
+        &-get p:nth-of-type(2) {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 146.19%;
+            color: #4F4F4F;
+            margin-top: 35px;
+        }
+
+        &-get span {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 146.19%;
+            color: #333333;
+            margin-top: 15px;
+        }
+
+        &-get span a {
+            color: #333333;
+            text-decoration: underline;
+        }
+
+
+    }
+}
+
+#email {
+    width: 100%;
+    padding: 27px;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4F4F4F;
+    margin-top: 95px;
+}
+
+#email::placeholder {
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    color: #4F4F4F;
+}
+
+#checkbox {
+    background: #333333;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+//footer
+.footer {
+    background-image: url('../img/bgFooter.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 1053px;
+    background-size: contain;
+    margin-top: 65px;
+    position: relative;
+
+    &-img {
+        position: absolute;
+        display: block;
+        left: 871px;
+        top: 0;
+    }
+
+    &_up {
+        width: 200px;
+        padding: 23px 0 23px 16px;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: left;
+        border: 1px solid #000000;
+        color: #000000;
+        position: relative;
+        transform: translate(1750px, 85px) rotate(-90deg);
+    }
+
+    &_up::after {
+        content: "";
+        width: 41px;
+        height: 2px;
+        background: #000000;
+        position: absolute;
+        top: 36px;
+        right: 45px;
+    }
+
+    &_up::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border-right: 2px solid #000000;
+        border-bottom: 2px solid #000000;
+        position: absolute;
+        top: 29px;
+        right: 46px;
+        transform: rotate(-48deg);
+    }
+
+    &_nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 390px;
+
+        &-logo {
+            text-align: left;
+            margin-left: 70px;
+
+        }
+
+        &-link {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-link a:nth-of-type(1) img {
+            background: #000000;
+            padding: 9px 7px;
+            border-radius: 5px;
+        }
+
+        &-link a:nth-of-type(5) img {
+            background: #000000;
+            padding: 8px 10px;
+            border-radius: 5px;
+        }
+
+        &-link a {
+            margin-left: 95px;
+        }
+    }
+
+    &_link {
+        margin-left: 70px;
+        margin-top: 20px;
+
+        &-items {
+            display: grid;
+            grid-template-columns: repeat(4, 270px);
+
+        }
+
+        &-items p {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 146.19%;
+            padding-bottom: 25px;
+            color: #FAFF09;
+        }
+
+        &-items ul li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 146.19%;
+            color: #F2F2F2;
+            padding-bottom: 15px;
+        }
+    }
+}
